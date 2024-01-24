@@ -4,7 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8a8fa15d-ca09-4d8b-ab6c-6579d0e504df" name="Changes" comment="" />
+    <list default="true" id="8a8fa15d-ca09-4d8b-ab6c-6579d0e504df" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/IOT-Guide-JWT-Without-JPA/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -21,6 +25,7 @@
       <MavenGeneralSettings>
         <option name="localRepository" value="$USER_HOME$/maven-repo" />
         <option name="mavenHome" value="$USER_HOME$/maven" />
+        <option name="useMavenConfig" value="true" />
         <option name="userSettingsFile" value="$USER_HOME$/maven/conf/settings.xml" />
       </MavenGeneralSettings>
     </option>
@@ -53,6 +58,9 @@
       <workItem from="1705558210818" duration="183000" />
       <workItem from="1705558454581" duration="1504000" />
       <workItem from="1706081864712" duration="819000" />
+      <workItem from="1706082789213" duration="123000" />
+      <workItem from="1706082939009" duration="69000" />
+      <workItem from="1706083029750" duration="405000" />
     </task>
     <servers />
   </component>

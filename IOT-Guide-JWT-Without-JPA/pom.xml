@@ -11,8 +11,6 @@
 
     <artifactId>IOT-Guide-JWT-Without-JPA</artifactId>
 
-
-
     <dependencies>
         <dependency>
             <groupId>org.springframework.boot</groupId>
