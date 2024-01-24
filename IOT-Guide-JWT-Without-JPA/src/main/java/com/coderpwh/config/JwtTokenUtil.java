@@ -22,7 +22,14 @@ public class JwtTokenUtil implements Serializable {
     private String secret;
 
 
-
+    /***
+     * 通过token获取用户信息
+     * @param token
+     * @return
+     */
+    public String getUsernameFromToken(String token) {
+        return null;
+    }
 
 
 }
