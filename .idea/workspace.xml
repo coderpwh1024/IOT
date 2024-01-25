@@ -62,11 +62,11 @@
       <module name="IOT-Guide-JWT-Without-JPA" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.coderpwh.*" />
+          <option name="PATTERN" value="com.coderpwh.service.impl.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="SPRING_BOOT_MAIN_CLASS" value="com.coderpwh.JwtWithoutJpaApplication" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.coderpwh.service.impl.JwtWithoutJpaApplication" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
