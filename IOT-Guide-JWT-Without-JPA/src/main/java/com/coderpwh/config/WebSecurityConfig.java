@@ -7,6 +7,8 @@ import org.springframework.security.config.annotation.web.configuration.WebSecur
 import org.springframework.security.core.userdetails.UserDetailsService;
 
 /**
+ * WebSecurityConfig 配置
+ *
  * @author coderpwh
  */
 @Configuration
