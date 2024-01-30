@@ -5,7 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8a8fa15d-ca09-4d8b-ab6c-6579d0e504df" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/IOT-Guide-JWT-Without-JPA/src/main/java/com/coderpwh/config/WebSecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/IOT-Guide-JWT-Without-JPA/src/main/java/com/coderpwh/config/WebSecurityConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -57,8 +57,8 @@
     <property name="project.structure.side.proportion" value="0.0" />
     <property name="settings.editor.selected.configurable" value="MavenSettings" />
   </component>
-  <component name="RunManager" selected="Spring Boot.JwtWithoutJpaApplication (1)">
-    <configuration name="JwtWithoutJpaApplication (1)" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+  <component name="RunManager">
+    <configuration name="JwtWithoutJpaApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
       <module name="IOT-Guide-JWT-Without-JPA" />
       <extension name="coverage">
         <pattern>
@@ -71,22 +71,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="JwtWithoutJpaApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
-      <module name="IOT-Guide-JWT-Without-JPA" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.coderpwh.service.impl.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="SPRING_BOOT_MAIN_CLASS" value="com.coderpwh.service.impl.JwtWithoutJpaApplication" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Spring Boot.JwtWithoutJpaApplication (1)" />
         <item itemvalue="Spring Boot.JwtWithoutJpaApplication" />
       </list>
     </recent_temporary>
@@ -106,7 +92,7 @@
       <workItem from="1706082939009" duration="69000" />
       <workItem from="1706083029750" duration="7959000" />
       <workItem from="1706160094327" duration="5574000" />
-      <workItem from="1706583206992" duration="2716000" />
+      <workItem from="1706583206992" duration="4252000" />
     </task>
     <servers />
   </component>
@@ -126,5 +112,16 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/IOT-Guide-JWT-Without-JPA/src/main/java/com/coderpwh/config/JwtRequestFilter.java</url>
+          <line>37</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
