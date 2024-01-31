@@ -1,6 +1,7 @@
 package com.coderpwh.config;
 
 import com.coderpwh.service.JwtUserDetailsService;
+import io.jsonwebtoken.ExpiredJwtException;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.security.authentication.UsernamePasswordAuthenticationToken;
 import org.springframework.security.core.context.SecurityContextHolder;
@@ -40,9 +41,15 @@ public class JwtRequestFilter extends OncePerRequestFilter {
         String username = null;
         String jwtToken = null;
 
-        if (requestTokenHeader != null && requestTokenHeader.startsWith("Bearer")) {
+        if (requestTokenHeader != null && requestTokenHeader.startsWith("Bearer ")) {
             jwtToken = requestTokenHeader.substring(7);
-            username = jwtTokenUtil.getUsernameFromToken(jwtToken);
+            try {
+                username = jwtTokenUtil.getUsernameFromToken(jwtToken);
+            } catch (IllegalArgumentException e) {
+                log.error("Unable to get JWT Token");
+            } catch (ExpiredJwtException e) {
+                log.error("JWT Token has expired");
+            }
         } else {
             logger.warn("JWT Token does not begin with Bearer String");
         }
