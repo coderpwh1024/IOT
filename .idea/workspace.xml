@@ -8,7 +8,6 @@
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/IOT-Guide-JWT-Without-JPA/src/main/java/com/coderpwh/config/JwtRequestFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/IOT-Guide-JWT-Without-JPA/src/main/java/com/coderpwh/config/JwtRequestFilter.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/IOT-Guide-JWT-Without-JPA/src/main/java/com/coderpwh/config/JwtTokenUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/IOT-Guide-JWT-Without-JPA/src/main/java/com/coderpwh/config/JwtTokenUtil.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/IOT-Guide-JWT-Without-JPA/target/classes/com/coderpwh/JwtWithoutJpaApplication.class" beforeDir="false" afterPath="$PROJECT_DIR$/IOT-Guide-JWT-Without-JPA/target/classes/com/coderpwh/JwtWithoutJpaApplication.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/IOT-Guide-JWT-Without-JPA/target/classes/com/coderpwh/config/JwtTokenUtil.class" beforeDir="false" afterPath="$PROJECT_DIR$/IOT-Guide-JWT-Without-JPA/target/classes/com/coderpwh/config/JwtTokenUtil.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -98,7 +97,7 @@
       <workItem from="1706160094327" duration="5574000" />
       <workItem from="1706583206992" duration="5119000" />
       <workItem from="1706669560449" duration="1678000" />
-      <workItem from="1706680206078" duration="2553000" />
+      <workItem from="1706680206078" duration="3649000" />
     </task>
     <servers />
   </component>
