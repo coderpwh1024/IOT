@@ -4,12 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8a8fa15d-ca09-4d8b-ab6c-6579d0e504df" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/IOT-Guide-JWT-Without-JPA/src/main/java/com/coderpwh/config/JwtRequestFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/IOT-Guide-JWT-Without-JPA/src/main/java/com/coderpwh/config/JwtRequestFilter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/IOT-Guide-JWT-Without-JPA/src/main/java/com/coderpwh/config/JwtTokenUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/IOT-Guide-JWT-Without-JPA/src/main/java/com/coderpwh/config/JwtTokenUtil.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/IOT-Guide-JWT-Without-JPA/target/classes/com/coderpwh/config/JwtTokenUtil.class" beforeDir="false" afterPath="$PROJECT_DIR$/IOT-Guide-JWT-Without-JPA/target/classes/com/coderpwh/config/JwtTokenUtil.class" afterDir="false" />
-    </list>
+    <list default="true" id="8a8fa15d-ca09-4d8b-ab6c-6579d0e504df" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -97,7 +92,7 @@
       <workItem from="1706160094327" duration="5574000" />
       <workItem from="1706583206992" duration="5119000" />
       <workItem from="1706669560449" duration="1678000" />
-      <workItem from="1706680206078" duration="3649000" />
+      <workItem from="1706680206078" duration="4332000" />
     </task>
     <servers />
   </component>
