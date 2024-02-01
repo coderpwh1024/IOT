@@ -6,18 +6,29 @@ import javax.persistence.*;
  * @author coderpwh
  */
 @Entity
-@Table(name = "user")
+@Table(name = "t_user")
 public class DaoUser {
 
     @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private long id;
+    @GeneratedValue(strategy = GenerationType.AUTO)
+    private Long id;
+
     @Column
     private String username;
+
     @Column
     private String password;
+
     @Column
     private String role;
+
+    public Long getId() {
+        return id;
+    }
+
+    public void setId(Long id) {
+        this.id = id;
+    }
 
     public String getRole() {
         return role;
