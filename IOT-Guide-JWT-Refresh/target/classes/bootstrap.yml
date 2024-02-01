@@ -1,0 +1,26 @@
+spring:
+  main:
+    allow-bean-definition-overriding: true
+  profiles:
+    active: '@spring.profiles.active@'
+  application:
+    name: iot
+  cloud:
+    nacos:
+      discovery:
+        server-addr: ${nacos.server-addr}
+      config:
+        enabled: true
+        server-addr: ${nacos.server-addr}
+        namespace: ${nacos.config-namespace}
+        file-extension: yaml
+        group: DEFAULT_GROUP
+        # 常规配置文件
+        # 优先级大于 shared-configs，在 shared-configs 之后加载
+        extension-configs:
+          - data-id: ${spring.application.name}.yaml
+
+
+
+
+
