@@ -1,0 +1,14 @@
+server:
+  port: 9100
+jwt:
+  expirationDateInMs: 0
+  refreshExpirationDateInMs: 9000000
+  secret: iot.technology
+spring:
+  datasource:
+    url: jdbc:mysql://localhost/jwt_refresh_db?createDatabaseIfNotExist=true&autoReconnect=true&useSSL=false
+    username: root
+    password: root
+  jpa:
+    hibernate:
+      ddl-auto: create-drop
