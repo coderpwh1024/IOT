@@ -1,16 +1,21 @@
 package com.coderpwh.config;
 
 import io.jsonwebtoken.*;
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.security.authentication.BadCredentialsException;
 import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.authority.SimpleGrantedAuthority;
 import org.springframework.security.core.userdetails.UserDetails;
+import org.springframework.stereotype.Service;
+
 import java.util.*;
 
 /**
  * @author coderpwh
  */
+@Service
+@Slf4j
 public class JwtUtil {
 
     private String secret;

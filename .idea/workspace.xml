@@ -5,8 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8a8fa15d-ca09-4d8b-ab6c-6579d0e504df" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/IOT-Guide-JWT-Refresh/src/main/java/com/coderpwh/model/DaoUser.java" beforeDir="false" afterPath="$PROJECT_DIR$/IOT-Guide-JWT-Refresh/src/main/java/com/coderpwh/model/DaoUser.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/IOT-Guide-JWT-Refresh/src/main/java/com/coderpwh/model/UserDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/IOT-Guide-JWT-Refresh/src/main/java/com/coderpwh/model/UserDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/IOT-Guide-JWT-Refresh/src/main/java/com/coderpwh/config/CustomJwtAuthenticationFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/IOT-Guide-JWT-Refresh/src/main/java/com/coderpwh/config/CustomJwtAuthenticationFilter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/IOT-Guide-JWT-Refresh/src/main/java/com/coderpwh/config/JwtUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/IOT-Guide-JWT-Refresh/src/main/java/com/coderpwh/config/JwtUtil.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/IOT-Guide-JWT-Refresh/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/IOT-Guide-JWT-Refresh/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/IOT-Guide-JWT-Without-JPA/target/classes/com/coderpwh/config/JwtAuthenticationEntryPoint.class" beforeDir="false" afterPath="$PROJECT_DIR$/IOT-Guide-JWT-Without-JPA/target/classes/com/coderpwh/config/JwtAuthenticationEntryPoint.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -58,9 +61,22 @@
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="MavenSettings" />
   </component>
-  <component name="RunManager" selected="Spring Boot.JwtWithoutJpaApplication">
+  <component name="RunManager" selected="Spring Boot.JwtRefreshApplication">
     <configuration name="JwtWithoutJpa | 获取JWT" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" path="$PROJECT_DIR$/IOT-Guide-JWT-Without-JPA/src/test/java/com/coderpwh/JwtWithoutJpa.http" requestIdentifier="获取JWT" runType="Run single request">
       <method v="2" />
+    </configuration>
+    <configuration name="JwtRefreshApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="IOT-Guide-JWT-Refresh" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.coderpwh.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.coderpwh.JwtRefreshApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
     </configuration>
     <configuration name="JwtWithoutJpaApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
       <module name="IOT-Guide-JWT-Without-JPA" />
@@ -77,6 +93,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Spring Boot.JwtRefreshApplication" />
         <item itemvalue="Spring Boot.JwtWithoutJpaApplication" />
         <item itemvalue="HTTP Request.JwtWithoutJpa | 获取JWT" />
       </list>
@@ -100,7 +117,7 @@
       <workItem from="1706583206992" duration="5119000" />
       <workItem from="1706669560449" duration="1678000" />
       <workItem from="1706680206078" duration="5232000" />
-      <workItem from="1706764198346" duration="8876000" />
+      <workItem from="1706764198346" duration="9978000" />
     </task>
     <servers />
   </component>
