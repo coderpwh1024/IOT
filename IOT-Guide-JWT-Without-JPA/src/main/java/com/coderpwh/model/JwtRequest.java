@@ -1,10 +1,13 @@
 package com.coderpwh.model;
 
+import lombok.Data;
+
 import java.io.Serializable;
 
 /**
  * @author coderpwh
  */
+@Data
 public class JwtRequest implements Serializable {
 
 

@@ -4,7 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8a8fa15d-ca09-4d8b-ab6c-6579d0e504df" name="Changes" comment="" />
+    <list default="true" id="8a8fa15d-ca09-4d8b-ab6c-6579d0e504df" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/IOT-Guide-JWT-Without-JPA/src/main/java/com/coderpwh/config/JwtAuthenticationEntryPoint.java" beforeDir="false" afterPath="$PROJECT_DIR$/IOT-Guide-JWT-Without-JPA/src/main/java/com/coderpwh/config/JwtAuthenticationEntryPoint.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/IOT-Guide-JWT-Without-JPA/src/main/java/com/coderpwh/config/JwtRequestFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/IOT-Guide-JWT-Without-JPA/src/main/java/com/coderpwh/config/JwtRequestFilter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/IOT-Guide-JWT-Without-JPA/src/main/java/com/coderpwh/controller/JwtAuthenticationController.java" beforeDir="false" afterPath="$PROJECT_DIR$/IOT-Guide-JWT-Without-JPA/src/main/java/com/coderpwh/controller/JwtAuthenticationController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/IOT-Guide-JWT-Without-JPA/src/main/java/com/coderpwh/model/JwtRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/IOT-Guide-JWT-Without-JPA/src/main/java/com/coderpwh/model/JwtRequest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/IOT-Guide-JWT-Without-JPA/target/classes/com/coderpwh/config/JwtAuthenticationEntryPoint.class" beforeDir="false" afterPath="$PROJECT_DIR$/IOT-Guide-JWT-Without-JPA/target/classes/com/coderpwh/config/JwtAuthenticationEntryPoint.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/IOT-Guide-JWT-Without-JPA/target/classes/com/coderpwh/config/JwtRequestFilter.class" beforeDir="false" afterPath="$PROJECT_DIR$/IOT-Guide-JWT-Without-JPA/target/classes/com/coderpwh/config/JwtRequestFilter.class" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -92,7 +100,8 @@
       <workItem from="1706160094327" duration="5574000" />
       <workItem from="1706583206992" duration="5119000" />
       <workItem from="1706669560449" duration="1678000" />
-      <workItem from="1706680206078" duration="4812000" />
+      <workItem from="1706680206078" duration="5232000" />
+      <workItem from="1706764198346" duration="1073000" />
     </task>
     <servers />
   </component>
