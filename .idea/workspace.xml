@@ -5,9 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8a8fa15d-ca09-4d8b-ab6c-6579d0e504df" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/IOT-Guide-JWT-Without-JPA/src/main/java/com/coderpwh/config/JwtRequestFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/IOT-Guide-JWT-Without-JPA/src/main/java/com/coderpwh/config/JwtRequestFilter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/IOT-Guide-JWT-Without-JPA/src/test/java/com/coderpwh/JwtWithoutJpa.http" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/IOT-Guide-JWT-Without-JPA/src/main/java/com/coderpwh/config/WebSecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/IOT-Guide-JWT-Without-JPA/src/main/java/com/coderpwh/config/WebSecurityConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/IOT-Guide-JWT-Without-JPA/src/main/java/com/coderpwh/controller/JwtAuthenticationController.java" beforeDir="false" afterPath="$PROJECT_DIR$/IOT-Guide-JWT-Without-JPA/src/main/java/com/coderpwh/controller/JwtAuthenticationController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/IOT-Guide-JWT-Without-JPA/target/classes/com/coderpwh/config/WebSecurityConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/IOT-Guide-JWT-Without-JPA/target/classes/com/coderpwh/config/WebSecurityConfig.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/IOT-Guide-JWT-Without-JPA/target/classes/com/coderpwh/controller/JwtAuthenticationController.class" beforeDir="false" afterPath="$PROJECT_DIR$/IOT-Guide-JWT-Without-JPA/target/classes/com/coderpwh/controller/JwtAuthenticationController.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -59,7 +61,10 @@
     <property name="project.structure.side.proportion" value="0.0" />
     <property name="settings.editor.selected.configurable" value="MavenSettings" />
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Spring Boot.JwtWithoutJpaApplication">
+    <configuration name="JwtWithoutJpa | 获取JWT" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" path="$PROJECT_DIR$/IOT-Guide-JWT-Without-JPA/src/test/java/com/coderpwh/JwtWithoutJpa.http" requestIdentifier="获取JWT" runType="Run single request">
+      <method v="2" />
+    </configuration>
     <configuration name="JwtWithoutJpaApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
       <module name="IOT-Guide-JWT-Without-JPA" />
       <extension name="coverage">
@@ -76,6 +81,7 @@
     <recent_temporary>
       <list>
         <item itemvalue="Spring Boot.JwtWithoutJpaApplication" />
+        <item itemvalue="HTTP Request.JwtWithoutJpa | 获取JWT" />
       </list>
     </recent_temporary>
   </component>
@@ -97,7 +103,7 @@
       <workItem from="1706583206992" duration="5119000" />
       <workItem from="1706669560449" duration="1678000" />
       <workItem from="1706680206078" duration="5232000" />
-      <workItem from="1706764198346" duration="2396000" />
+      <workItem from="1706764198346" duration="3940000" />
     </task>
     <servers />
   </component>

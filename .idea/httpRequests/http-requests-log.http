@@ -1,0 +1,34 @@
+POST http://localhost:8080/authenticate
+Content-Type: application/json
+
+{
+  "username":"iot.technology",
+  "password":"password"
+}
+
+<> 2024-02-01T141831.200.json
+
+###
+
+POST http://localhost:8080/authenticate
+Content-Type: application/json
+
+{
+  "username":"iot.technology",
+  "password":"password"
+}
+
+###
+
+POST http://localhost:8080/authenticate
+Content-Type: application/json
+
+{
+  "username":"iot.technology",
+  "password":"password"
+}
+
+<> 2024-02-01T141741.200.json
+
+###
+
