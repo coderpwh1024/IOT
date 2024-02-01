@@ -6,11 +6,13 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="IOT-Guide-JWT-Refresh" />
         <module name="IOT-Guide-JWT-Without-JPA" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="IOT" target="1.5" />
+      <module name="IOT-Guide-JWT-Refresh" target="1.8" />
       <module name="IOT-Guide-JWT-Without-JPA" target="1.8" />
     </bytecodeTargetLevel>
   </component>

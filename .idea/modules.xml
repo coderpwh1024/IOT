@@ -3,6 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/IOT.iml" filepath="$PROJECT_DIR$/IOT.iml" />
+      <module fileurl="file://$PROJECT_DIR$/IOT-Guide-JWT-Refresh/IOT-Guide-JWT-Refresh.iml" filepath="$PROJECT_DIR$/IOT-Guide-JWT-Refresh/IOT-Guide-JWT-Refresh.iml" />
       <module fileurl="file://$PROJECT_DIR$/IOT-Guide-JWT-Without-JPA/IOT-Guide-JWT-Without-JPA.iml" filepath="$PROJECT_DIR$/IOT-Guide-JWT-Without-JPA/IOT-Guide-JWT-Without-JPA.iml" />
     </modules>
   </component>
