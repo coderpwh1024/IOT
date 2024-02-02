@@ -6,12 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="8a8fa15d-ca09-4d8b-ab6c-6579d0e504df" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/IOT-Guide-JWT-Refresh/src/main/java/com/coderpwh/JwtRefreshApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/IOT-Guide-JWT-Refresh/src/main/java/com/coderpwh/JwtRefreshApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/IOT-Guide-JWT-Refresh/src/main/resources/application.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/IOT-Guide-JWT-Refresh/src/main/resources/bootstrap.yml" beforeDir="false" afterPath="$PROJECT_DIR$/IOT-Guide-JWT-Refresh/src/main/resources/bootstrap.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/IOT-Guide-JWT-Refresh/target/classes/application.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/IOT-Guide-JWT-Refresh/target/classes/bootstrap.yml" beforeDir="false" afterPath="$PROJECT_DIR$/IOT-Guide-JWT-Refresh/target/classes/bootstrap.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/IOT-Guide-JWT-Refresh/target/classes/com/coderpwh/JwtRefreshApplication.class" beforeDir="false" afterPath="$PROJECT_DIR$/IOT-Guide-JWT-Refresh/target/classes/com/coderpwh/JwtRefreshApplication.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/IOT-Guide-JWT-Refresh/src/main/resources/bootstrap-qa.yml" beforeDir="false" afterPath="$PROJECT_DIR$/IOT-Guide-JWT-Refresh/src/main/resources/bootstrap-qa.yml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -56,7 +51,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="jdk.selected.JAVA_MODULE" value="1.8" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/IOT-Guide-JWT-Refresh/src/main/resources" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
@@ -117,7 +112,7 @@
       <workItem from="1706669560449" duration="1678000" />
       <workItem from="1706680206078" duration="5232000" />
       <workItem from="1706764198346" duration="10253000" />
-      <workItem from="1706774869163" duration="4611000" />
+      <workItem from="1706774869163" duration="6613000" />
     </task>
     <servers />
   </component>
