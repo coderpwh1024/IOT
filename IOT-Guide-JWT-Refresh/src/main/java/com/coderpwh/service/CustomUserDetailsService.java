@@ -1,7 +1,8 @@
 package com.coderpwh.service;
 
-import com.coderpwh.dao.UserDao;
-import com.coderpwh.model.DaoUser;
+
+import com.coderpwh.entity.UserDomain;
+import com.coderpwh.mapper.UserMapper;
 import com.coderpwh.model.UserDTO;
 import org.springframework.security.core.authority.SimpleGrantedAuthority;
 import org.springframework.security.core.userdetails.User;
@@ -23,7 +24,8 @@ import java.util.Objects;
 public class CustomUserDetailsService implements UserDetailsService {
 
     @Resource
-    private UserDao userDao;
+    private UserMapper userMapper;
+
 
     @Resource
     private PasswordEncoder bcryptEncoder;
@@ -31,7 +33,7 @@ public class CustomUserDetailsService implements UserDetailsService {
     @Override
     public UserDetails loadUserByUsername(String username) throws UsernameNotFoundException {
         List<SimpleGrantedAuthority> roles = null;
-        DaoUser user = userDao.findByUsername(username);
+        UserDomain user = userMapper.findByUsername(username);
         if (Objects.nonNull(user)) {
             roles = Arrays.asList(new SimpleGrantedAuthority(user.getRole()));
             return new User(user.getUsername(), user.getPassword(), roles);
@@ -45,12 +47,13 @@ public class CustomUserDetailsService implements UserDetailsService {
      * @param user
      * @return
      */
-    public DaoUser save(UserDTO user) {
-        DaoUser newUser = new DaoUser();
+    public UserDomain save(UserDTO user) {
+        UserDomain newUser = new UserDomain();
         newUser.setUsername(user.getUsername());
         newUser.setPassword(bcryptEncoder.encode(user.getPassword()));
         newUser.setRole(user.getRole());
-        return userDao.save(newUser);
+        userMapper.insert(newUser);
+        return newUser;
     }
 
 

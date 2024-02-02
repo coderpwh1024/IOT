@@ -13,7 +13,7 @@ import java.io.Serializable;
  */
 @Data
 @TableName(value = "t_user")
-public class User implements Serializable {
+public class UserDomain implements Serializable {
     /**
      * 主键id
      */

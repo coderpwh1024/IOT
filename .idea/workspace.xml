@@ -5,11 +5,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8a8fa15d-ca09-4d8b-ab6c-6579d0e504df" name="Changes" comment="feat:">
-      <change afterPath="$PROJECT_DIR$/IOT-Guide-JWT-Refresh/src/main/java/com/coderpwh/entity/User.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/IOT-Guide-JWT-Refresh/src/main/java/com/coderpwh/mapper/UserMapper.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/IOT-Guide-JWT-Refresh/IOT-Guide-JWT-Refresh.iml" beforeDir="false" afterPath="$PROJECT_DIR$/IOT-Guide-JWT-Refresh/IOT-Guide-JWT-Refresh.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/IOT-Guide-JWT-Refresh/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/IOT-Guide-JWT-Refresh/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/IOT-Guide-JWT-Refresh/src/main/java/com/coderpwh/JwtRefreshApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/IOT-Guide-JWT-Refresh/src/main/java/com/coderpwh/JwtRefreshApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/IOT-Guide-JWT-Refresh/src/main/java/com/coderpwh/dao/UserDao.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/IOT-Guide-JWT-Refresh/src/main/java/com/coderpwh/entity/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/IOT-Guide-JWT-Refresh/src/main/java/com/coderpwh/entity/UserDomain.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/IOT-Guide-JWT-Refresh/src/main/java/com/coderpwh/mapper/UserMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/IOT-Guide-JWT-Refresh/src/main/java/com/coderpwh/mapper/UserMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/IOT-Guide-JWT-Refresh/src/main/java/com/coderpwh/model/DaoUser.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/IOT-Guide-JWT-Refresh/src/main/java/com/coderpwh/service/CustomUserDetailsService.java" beforeDir="false" afterPath="$PROJECT_DIR$/IOT-Guide-JWT-Refresh/src/main/java/com/coderpwh/service/CustomUserDetailsService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/IOT-Guide-JWT-Refresh/src/main/resources/mapper/UserMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/IOT-Guide-JWT-Refresh/src/main/resources/mapper/UserMapper.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -54,7 +57,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="jdk.selected.JAVA_MODULE" value="1.8" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/IOT-Guide-JWT-Refresh/src/main/java/com/coderpwh/mapper" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/IOT-Guide-JWT-Refresh/src/main/resources/mapper" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
@@ -63,6 +66,7 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/IOT-Guide-JWT-Refresh/src/main/resources/mapper" />
       <recent name="$PROJECT_DIR$/IOT-Guide-JWT-Refresh/src/main/java/com/coderpwh/mapper" />
       <recent name="$PROJECT_DIR$/IOT-Guide-JWT-Refresh/src/main/java/com/coderpwh/entity" />
       <recent name="$PROJECT_DIR$/IOT-Guide-JWT-Refresh/src/main/resources" />
@@ -117,7 +121,7 @@
       <workItem from="1706669560449" duration="1678000" />
       <workItem from="1706680206078" duration="5232000" />
       <workItem from="1706764198346" duration="10253000" />
-      <workItem from="1706774869163" duration="10268000" />
+      <workItem from="1706774869163" duration="11200000" />
     </task>
     <servers />
   </component>
