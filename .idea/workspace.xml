@@ -6,7 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="8a8fa15d-ca09-4d8b-ab6c-6579d0e504df" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/IOT-Guide-JWT-Refresh/src/main/resources/bootstrap-qa.yml" beforeDir="false" afterPath="$PROJECT_DIR$/IOT-Guide-JWT-Refresh/src/main/resources/bootstrap-qa.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/IOT-Guide-JWT-Without-JPA/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/IOT-Guide-JWT-Without-JPA/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -112,7 +112,7 @@
       <workItem from="1706669560449" duration="1678000" />
       <workItem from="1706680206078" duration="5232000" />
       <workItem from="1706764198346" duration="10253000" />
-      <workItem from="1706774869163" duration="6613000" />
+      <workItem from="1706774869163" duration="7267000" />
     </task>
     <servers />
   </component>
