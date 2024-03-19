@@ -6,30 +6,23 @@ import java.util.Optional;
 /**
  * @author coderpwh
  */
-public class StringDataEntry extends BasicKvEntry {
+public class DoubleDataEntry extends BasicKvEntry{
 
+    private final Double value;
 
-    private static final long  serialVersionUID = 1L;
-    private final String value;
-
-    public StringDataEntry(String key, String value){
+    public DoubleDataEntry(String key, Double value) {
         super(key);
         this.value = value;
     }
 
     @Override
-    public Optional<String> getStrValue() {
-        return Optional.of(value);
-    }
-
-    @Override
     public DataType getDataType() {
-        return DataType.STRING;
+        return DataType.DOUBLE;
     }
 
     @Override
-    public String getValueAsString() {
-        return value;
+    public Optional<Double> getDoubleValue() {
+        return Optional.of(value);
     }
 
     @Override
@@ -42,13 +35,13 @@ public class StringDataEntry extends BasicKvEntry {
         if (this == o) {
             return true;
         }
-        if (!(o instanceof StringDataEntry)) {
+        if (!(o instanceof DoubleDataEntry)) {
             return false;
         }
         if (!super.equals(o)) {
             return false;
         }
-        StringDataEntry that = (StringDataEntry) o;
+        DoubleDataEntry that = (DoubleDataEntry) o;
         return Objects.equals(value, that.value);
     }
 
@@ -59,6 +52,15 @@ public class StringDataEntry extends BasicKvEntry {
 
     @Override
     public String toString() {
-        return "StringDataEntry{" + "value='" + value + '\'' + "} " + super.toString();
+        return "DoubleDataEntry{" +
+                "value=" + value +
+                "} " + super.toString();
     }
+
+    @Override
+    public String getValueAsString() {
+        return Double.toString(value);
+    }
+
+
 }

@@ -6,35 +6,22 @@ import java.util.Optional;
 /**
  * @author coderpwh
  */
-public class StringDataEntry extends BasicKvEntry {
+public class BooleanDataEntry  extends BasicKvEntry {
+    private final Boolean value;
 
-
-    private static final long  serialVersionUID = 1L;
-    private final String value;
-
-    public StringDataEntry(String key, String value){
+    public BooleanDataEntry(String key, Boolean value) {
         super(key);
         this.value = value;
     }
 
     @Override
-    public Optional<String> getStrValue() {
-        return Optional.of(value);
-    }
-
-    @Override
     public DataType getDataType() {
-        return DataType.STRING;
+        return DataType.BOOLEAN;
     }
 
     @Override
-    public String getValueAsString() {
-        return value;
-    }
-
-    @Override
-    public Object getValue() {
-        return value;
+    public Optional<Boolean> getBooleanValue() {
+        return Optional.of(value);
     }
 
     @Override
@@ -42,14 +29,19 @@ public class StringDataEntry extends BasicKvEntry {
         if (this == o) {
             return true;
         }
-        if (!(o instanceof StringDataEntry)) {
+        if (!(o instanceof BooleanDataEntry)) {
             return false;
         }
         if (!super.equals(o)) {
             return false;
         }
-        StringDataEntry that = (StringDataEntry) o;
+        BooleanDataEntry that = (BooleanDataEntry) o;
         return Objects.equals(value, that.value);
+    }
+
+    @Override
+    public Object getValue() {
+        return value;
     }
 
     @Override
@@ -59,6 +51,13 @@ public class StringDataEntry extends BasicKvEntry {
 
     @Override
     public String toString() {
-        return "StringDataEntry{" + "value='" + value + '\'' + "} " + super.toString();
+        return "BooleanDataEntry{" +
+                "value=" + value +
+                "} " + super.toString();
+    }
+
+    @Override
+    public String getValueAsString() {
+        return Boolean.toString(value);
     }
 }
