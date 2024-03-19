@@ -7,7 +7,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 /**
  * @author coderpwh
  */
-@SpringBootApplication(scanBasePackages = {"com.coderpwh"})
+@SpringBootApplication(scanBasePackages = {"com.coderpwh.tsl"})
 public class TslApiServer {
 
     /**
