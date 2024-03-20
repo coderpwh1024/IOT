@@ -4,7 +4,7 @@ spring:
   profiles:
     active: '@spring.profiles.active@'
   application:
-    name: iot
+    name: iot-http
   cloud:
     nacos:
       discovery:
