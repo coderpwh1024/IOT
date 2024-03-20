@@ -25,6 +25,11 @@ public class BasicAttributesUpdateRequest extends BasicRequest implements Attrib
         this.data = new LinkedHashSet<>();
     }
 
+    public BasicAttributesUpdateRequest(Integer requestId, Set<AttributeKvEntry> data) {
+        super(requestId);
+        this.data = data;
+    }
+
     public void add(AttributeKvEntry entry) {
         this.data.add(entry);
     }
