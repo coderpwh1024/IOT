@@ -10,7 +10,11 @@ public class BasicRequest {
 
     private final Integer requestId;
 
-    public BasicRequest(Integer requestId) {
+    public BasicRequest(Integer requestId){
         this.requestId = requestId;
+    }
+
+    public Integer getRequestId() {
+        return requestId;
     }
 }

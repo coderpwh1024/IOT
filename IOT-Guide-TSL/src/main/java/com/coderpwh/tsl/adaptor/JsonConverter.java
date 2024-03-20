@@ -1,12 +1,16 @@
 package com.coderpwh.tsl.adaptor;
 
 import com.coderpwh.tsl.core.AttributesUpdateRequest;
+import com.coderpwh.tsl.core.BasicAttributesUpdateRequest;
 import com.coderpwh.tsl.core.BasicRequest;
 import com.coderpwh.tsl.core.BasicTelemetryUploadRequest;
 import com.coderpwh.tsl.core.TelemetryUploadRequest;
 import com.coderpwh.tsl.data.kv.BaseAttributeKvEntry;
+import com.coderpwh.tsl.data.kv.BooleanDataEntry;
+import com.coderpwh.tsl.data.kv.DoubleDataEntry;
 import com.coderpwh.tsl.data.kv.JsonDataEntry;
 import com.coderpwh.tsl.data.kv.KvEntry;
+import com.coderpwh.tsl.data.kv.LongDataEntry;
 import com.coderpwh.tsl.data.kv.StringDataEntry;
 import com.google.gson.Gson;
 import com.google.gson.JsonElement;
@@ -17,6 +21,7 @@ import com.google.gson.JsonSyntaxException;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
+import java.util.stream.Collectors;
 
 /**
  * @author coderpwh
@@ -99,13 +104,13 @@ public class JsonConverter {
         return result;
     }
 
-    private static void parseNumericValue(List<KvEntry> result, Map.Entry<String, JsonElement> valueEntry, JsonPrimitive value) {
+    private static   void parseNumericValue(List<KvEntry> result, Map.Entry<String, JsonElement> valueEntry, JsonPrimitive value) {
         if (value.getAsString().contains(".")) {
             result.add(new DoubleDataEntry(valueEntry.getKey(), value.getAsDouble()));
         } else {
             try {
                 long longValue = Long.parseLong(value.getAsString());
-                result.add(new LongDataEæntry(valueEntry.getKey(), longValue));
+                result.add(new LongDataEntry(valueEntry.getKey(), longValue));
             } catch (NumberFormatException e) {
                 throw new JsonSyntaxException("Big integer values are not supported!");
             }
