@@ -83,4 +83,40 @@
         </profile>
     </profiles>
 
+      <build>
+          <finalName>IOT-Refresh</finalName>
+          <plugins>
+              <!-- 这里是为了在日志输出中增加 git 版本信息 -->
+              <plugin>
+                  <groupId>pl.project13.maven</groupId>
+                  <artifactId>git-commit-id-plugin</artifactId>
+                  <executions>
+                      <execution>
+                          <id>get-the-git-infos</id>
+                          <goals>
+                              <goal>revision</goal>
+                          </goals>
+                      </execution>
+                  </executions>
+                  <configuration>
+                      <failOnNoGitDirectory>false</failOnNoGitDirectory>
+                      <!-- 定义插件中所有时间格式，默认值：yyyy-MM-dd’T’HH:mm:ssZ -->
+                      <dateFormat>yyyy-MM-dd HH:mm:ss</dateFormat>
+                      <generateGitPropertiesFile>true</generateGitPropertiesFile>
+                      <commitIdGenerationMode>full</commitIdGenerationMode>
+                      <includeOnlyProperties>
+                          <includeOnlyProperty>git.branch</includeOnlyProperty>
+                          <includeOnlyProperty>git.build.version</includeOnlyProperty>
+                          <includeOnlyProperty>git.commit.id.full</includeOnlyProperty>
+                          <includeOnlyProperty>git.commit.id.abbrev</includeOnlyProperty>
+                          <includeOnlyProperty>git.build.time</includeOnlyProperty>
+                          <includeOnlyProperty>git.commit.message.full</includeOnlyProperty>
+                      </includeOnlyProperties>
+                      <commitIdGenerationMode>full</commitIdGenerationMode>
+                      <abbrevLength>11</abbrevLength>
+                  </configuration>
+              </plugin>
+          </plugins>
+      </build>
+
 </project>
