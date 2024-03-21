@@ -938,3 +938,261 @@ ERROR in ch.qos.logback.core.rolling.RollingFileAppender[RENT_FILE] - No encoder
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1246)
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1234)
 	at com.coderpwh.JwtRefreshApplication.main(JwtRefreshApplication.java:17)
+2024-03-21 11:13:30.348 [,] [main] ERROR o.s.boot.SpringApplication - Application run failed
+java.lang.IllegalStateException: Logback configuration error detected: 
+ERROR in ch.qos.logback.core.joran.action.NestedComplexPropertyIA - Could not create component [encoder] of type [net.logstash.logback.encoder.LogstashEncoder] java.lang.ClassNotFoundException: net.logstash.logback.encoder.LogstashEncoder
+ERROR in ch.qos.logback.core.joran.spi.Interpreter@52:86 - no applicable action for [fieldNames], current ElementPath  is [[configuration][appender][encoder][fieldNames]]
+ERROR in ch.qos.logback.core.joran.spi.Interpreter@53:29 - no applicable action for [includeContext], current ElementPath  is [[configuration][appender][encoder][includeContext]]
+ERROR in ch.qos.logback.core.joran.spi.Interpreter@54:32 - no applicable action for [includeCallerData], current ElementPath  is [[configuration][appender][encoder][includeCallerData]]
+ERROR in ch.qos.logback.core.joran.spi.Interpreter@55:27 - no applicable action for [customFields], current ElementPath  is [[configuration][appender][encoder][customFields]]
+ERROR in ch.qos.logback.core.joran.spi.Interpreter@56:97 - no applicable action for [provider], current ElementPath  is [[configuration][appender][encoder][provider]]
+ERROR in ch.qos.logback.core.joran.spi.Interpreter@57:28 - no applicable action for [fieldName], current ElementPath  is [[configuration][appender][encoder][provider][fieldName]]
+ERROR in ch.qos.logback.core.joran.spi.Interpreter@59:106 - no applicable action for [provider], current ElementPath  is [[configuration][appender][encoder][provider]]
+ERROR in ch.qos.logback.core.joran.spi.Interpreter@60:28 - no applicable action for [fieldName], current ElementPath  is [[configuration][appender][encoder][provider][fieldName]]
+ERROR in ch.qos.logback.core.joran.spi.Interpreter@61:37 - no applicable action for [useSimpleClassName], current ElementPath  is [[configuration][appender][encoder][provider][useSimpleClassName]]
+ERROR in ch.qos.logback.core.joran.spi.Interpreter@63:115 - no applicable action for [provider], current ElementPath  is [[configuration][appender][encoder][provider]]
+ERROR in ch.qos.logback.core.joran.spi.Interpreter@64:28 - no applicable action for [fieldName], current ElementPath  is [[configuration][appender][encoder][provider][fieldName]]
+ERROR in ch.qos.logback.core.joran.spi.Interpreter@65:37 - no applicable action for [useSimpleClassName], current ElementPath  is [[configuration][appender][encoder][provider][useSimpleClassName]]
+ERROR in ch.qos.logback.core.rolling.RollingFileAppender[RENT_FILE] - No encoder set for the appender named "RENT_FILE".
+	at org.springframework.boot.logging.logback.LogbackLoggingSystem.loadConfiguration(LogbackLoggingSystem.java:166)
+	at org.springframework.boot.logging.AbstractLoggingSystem.initializeWithConventions(AbstractLoggingSystem.java:82)
+	at org.springframework.boot.logging.AbstractLoggingSystem.initialize(AbstractLoggingSystem.java:60)
+	at org.springframework.boot.logging.logback.LogbackLoggingSystem.initialize(LogbackLoggingSystem.java:114)
+	at org.springframework.boot.context.logging.LoggingApplicationListener.initializeSystem(LoggingApplicationListener.java:264)
+	at org.springframework.boot.context.logging.LoggingApplicationListener.initialize(LoggingApplicationListener.java:237)
+	at org.springframework.boot.context.logging.LoggingApplicationListener.onApplicationEnvironmentPreparedEvent(LoggingApplicationListener.java:200)
+	at org.springframework.boot.context.logging.LoggingApplicationListener.onApplicationEvent(LoggingApplicationListener.java:173)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.doInvokeListener(SimpleApplicationEventMulticaster.java:172)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.invokeListener(SimpleApplicationEventMulticaster.java:165)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:139)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:127)
+	at org.springframework.boot.context.event.EventPublishingRunListener.environmentPrepared(EventPublishingRunListener.java:74)
+	at org.springframework.boot.SpringApplicationRunListeners.environmentPrepared(SpringApplicationRunListeners.java:54)
+	at org.springframework.boot.SpringApplication.prepareEnvironment(SpringApplication.java:351)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:317)
+	at org.springframework.boot.builder.SpringApplicationBuilder.run(SpringApplicationBuilder.java:137)
+	at org.springframework.cloud.bootstrap.BootstrapApplicationListener.bootstrapServiceContext(BootstrapApplicationListener.java:208)
+	at org.springframework.cloud.bootstrap.BootstrapApplicationListener.onApplicationEvent(BootstrapApplicationListener.java:104)
+	at org.springframework.cloud.bootstrap.BootstrapApplicationListener.onApplicationEvent(BootstrapApplicationListener.java:70)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.doInvokeListener(SimpleApplicationEventMulticaster.java:172)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.invokeListener(SimpleApplicationEventMulticaster.java:165)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:139)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:127)
+	at org.springframework.boot.context.event.EventPublishingRunListener.environmentPrepared(EventPublishingRunListener.java:74)
+	at org.springframework.boot.SpringApplicationRunListeners.environmentPrepared(SpringApplicationRunListeners.java:54)
+	at org.springframework.boot.SpringApplication.prepareEnvironment(SpringApplication.java:351)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:317)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1246)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1234)
+	at com.coderpwh.JwtRefreshApplication.main(JwtRefreshApplication.java:17)
+2024-03-21 11:13:30.355 [,] [main] ERROR o.s.boot.SpringApplication - Application run failed
+java.lang.IllegalStateException: Logback configuration error detected: 
+ERROR in ch.qos.logback.core.joran.action.NestedComplexPropertyIA - Could not create component [encoder] of type [net.logstash.logback.encoder.LogstashEncoder] java.lang.ClassNotFoundException: net.logstash.logback.encoder.LogstashEncoder
+ERROR in ch.qos.logback.core.joran.spi.Interpreter@52:86 - no applicable action for [fieldNames], current ElementPath  is [[configuration][appender][encoder][fieldNames]]
+ERROR in ch.qos.logback.core.joran.spi.Interpreter@53:29 - no applicable action for [includeContext], current ElementPath  is [[configuration][appender][encoder][includeContext]]
+ERROR in ch.qos.logback.core.joran.spi.Interpreter@54:32 - no applicable action for [includeCallerData], current ElementPath  is [[configuration][appender][encoder][includeCallerData]]
+ERROR in ch.qos.logback.core.joran.spi.Interpreter@55:27 - no applicable action for [customFields], current ElementPath  is [[configuration][appender][encoder][customFields]]
+ERROR in ch.qos.logback.core.joran.spi.Interpreter@56:97 - no applicable action for [provider], current ElementPath  is [[configuration][appender][encoder][provider]]
+ERROR in ch.qos.logback.core.joran.spi.Interpreter@57:28 - no applicable action for [fieldName], current ElementPath  is [[configuration][appender][encoder][provider][fieldName]]
+ERROR in ch.qos.logback.core.joran.spi.Interpreter@59:106 - no applicable action for [provider], current ElementPath  is [[configuration][appender][encoder][provider]]
+ERROR in ch.qos.logback.core.joran.spi.Interpreter@60:28 - no applicable action for [fieldName], current ElementPath  is [[configuration][appender][encoder][provider][fieldName]]
+ERROR in ch.qos.logback.core.joran.spi.Interpreter@61:37 - no applicable action for [useSimpleClassName], current ElementPath  is [[configuration][appender][encoder][provider][useSimpleClassName]]
+ERROR in ch.qos.logback.core.joran.spi.Interpreter@63:115 - no applicable action for [provider], current ElementPath  is [[configuration][appender][encoder][provider]]
+ERROR in ch.qos.logback.core.joran.spi.Interpreter@64:28 - no applicable action for [fieldName], current ElementPath  is [[configuration][appender][encoder][provider][fieldName]]
+ERROR in ch.qos.logback.core.joran.spi.Interpreter@65:37 - no applicable action for [useSimpleClassName], current ElementPath  is [[configuration][appender][encoder][provider][useSimpleClassName]]
+ERROR in ch.qos.logback.core.rolling.RollingFileAppender[RENT_FILE] - No encoder set for the appender named "RENT_FILE".
+	at org.springframework.boot.logging.logback.LogbackLoggingSystem.loadConfiguration(LogbackLoggingSystem.java:166)
+	at org.springframework.boot.logging.AbstractLoggingSystem.initializeWithConventions(AbstractLoggingSystem.java:82)
+	at org.springframework.boot.logging.AbstractLoggingSystem.initialize(AbstractLoggingSystem.java:60)
+	at org.springframework.boot.logging.logback.LogbackLoggingSystem.initialize(LogbackLoggingSystem.java:114)
+	at org.springframework.boot.context.logging.LoggingApplicationListener.initializeSystem(LoggingApplicationListener.java:264)
+	at org.springframework.boot.context.logging.LoggingApplicationListener.initialize(LoggingApplicationListener.java:237)
+	at org.springframework.boot.context.logging.LoggingApplicationListener.onApplicationEnvironmentPreparedEvent(LoggingApplicationListener.java:200)
+	at org.springframework.boot.context.logging.LoggingApplicationListener.onApplicationEvent(LoggingApplicationListener.java:173)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.doInvokeListener(SimpleApplicationEventMulticaster.java:172)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.invokeListener(SimpleApplicationEventMulticaster.java:165)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:139)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:127)
+	at org.springframework.boot.context.event.EventPublishingRunListener.environmentPrepared(EventPublishingRunListener.java:74)
+	at org.springframework.boot.SpringApplicationRunListeners.environmentPrepared(SpringApplicationRunListeners.java:54)
+	at org.springframework.boot.SpringApplication.prepareEnvironment(SpringApplication.java:351)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:317)
+	at org.springframework.boot.builder.SpringApplicationBuilder.run(SpringApplicationBuilder.java:137)
+	at org.springframework.cloud.bootstrap.BootstrapApplicationListener.bootstrapServiceContext(BootstrapApplicationListener.java:208)
+	at org.springframework.cloud.bootstrap.BootstrapApplicationListener.onApplicationEvent(BootstrapApplicationListener.java:104)
+	at org.springframework.cloud.bootstrap.BootstrapApplicationListener.onApplicationEvent(BootstrapApplicationListener.java:70)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.doInvokeListener(SimpleApplicationEventMulticaster.java:172)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.invokeListener(SimpleApplicationEventMulticaster.java:165)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:139)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:127)
+	at org.springframework.boot.context.event.EventPublishingRunListener.environmentPrepared(EventPublishingRunListener.java:74)
+	at org.springframework.boot.SpringApplicationRunListeners.environmentPrepared(SpringApplicationRunListeners.java:54)
+	at org.springframework.boot.SpringApplication.prepareEnvironment(SpringApplication.java:351)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:317)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1246)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1234)
+	at com.coderpwh.JwtRefreshApplication.main(JwtRefreshApplication.java:17)
+2024-03-21 11:27:34.962 [,] [main] ERROR o.s.boot.SpringApplication - Application run failed
+java.lang.IllegalStateException: Logback configuration error detected: 
+ERROR in ch.qos.logback.core.joran.action.AppenderRefAction - Could not find an appender named [RENT_FILE]. Did you define it below instead of above in the configuration file?
+ERROR in ch.qos.logback.core.joran.action.AppenderRefAction - See http://logback.qos.ch/codes.html#appender_order for more details.
+	at org.springframework.boot.logging.logback.LogbackLoggingSystem.loadConfiguration(LogbackLoggingSystem.java:166)
+	at org.springframework.boot.logging.AbstractLoggingSystem.initializeWithConventions(AbstractLoggingSystem.java:82)
+	at org.springframework.boot.logging.AbstractLoggingSystem.initialize(AbstractLoggingSystem.java:60)
+	at org.springframework.boot.logging.logback.LogbackLoggingSystem.initialize(LogbackLoggingSystem.java:114)
+	at org.springframework.boot.context.logging.LoggingApplicationListener.initializeSystem(LoggingApplicationListener.java:264)
+	at org.springframework.boot.context.logging.LoggingApplicationListener.initialize(LoggingApplicationListener.java:237)
+	at org.springframework.boot.context.logging.LoggingApplicationListener.onApplicationEnvironmentPreparedEvent(LoggingApplicationListener.java:200)
+	at org.springframework.boot.context.logging.LoggingApplicationListener.onApplicationEvent(LoggingApplicationListener.java:173)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.doInvokeListener(SimpleApplicationEventMulticaster.java:172)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.invokeListener(SimpleApplicationEventMulticaster.java:165)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:139)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:127)
+	at org.springframework.boot.context.event.EventPublishingRunListener.environmentPrepared(EventPublishingRunListener.java:74)
+	at org.springframework.boot.SpringApplicationRunListeners.environmentPrepared(SpringApplicationRunListeners.java:54)
+	at org.springframework.boot.SpringApplication.prepareEnvironment(SpringApplication.java:351)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:317)
+	at org.springframework.boot.builder.SpringApplicationBuilder.run(SpringApplicationBuilder.java:137)
+	at org.springframework.cloud.bootstrap.BootstrapApplicationListener.bootstrapServiceContext(BootstrapApplicationListener.java:208)
+	at org.springframework.cloud.bootstrap.BootstrapApplicationListener.onApplicationEvent(BootstrapApplicationListener.java:104)
+	at org.springframework.cloud.bootstrap.BootstrapApplicationListener.onApplicationEvent(BootstrapApplicationListener.java:70)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.doInvokeListener(SimpleApplicationEventMulticaster.java:172)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.invokeListener(SimpleApplicationEventMulticaster.java:165)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:139)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:127)
+	at org.springframework.boot.context.event.EventPublishingRunListener.environmentPrepared(EventPublishingRunListener.java:74)
+	at org.springframework.boot.SpringApplicationRunListeners.environmentPrepared(SpringApplicationRunListeners.java:54)
+	at org.springframework.boot.SpringApplication.prepareEnvironment(SpringApplication.java:351)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:317)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1246)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1234)
+	at com.coderpwh.JwtRefreshApplication.main(JwtRefreshApplication.java:17)
+2024-03-21 11:27:34.969 [,] [main] ERROR o.s.boot.SpringApplication - Application run failed
+java.lang.IllegalStateException: Logback configuration error detected: 
+ERROR in ch.qos.logback.core.joran.action.AppenderRefAction - Could not find an appender named [RENT_FILE]. Did you define it below instead of above in the configuration file?
+ERROR in ch.qos.logback.core.joran.action.AppenderRefAction - See http://logback.qos.ch/codes.html#appender_order for more details.
+	at org.springframework.boot.logging.logback.LogbackLoggingSystem.loadConfiguration(LogbackLoggingSystem.java:166)
+	at org.springframework.boot.logging.AbstractLoggingSystem.initializeWithConventions(AbstractLoggingSystem.java:82)
+	at org.springframework.boot.logging.AbstractLoggingSystem.initialize(AbstractLoggingSystem.java:60)
+	at org.springframework.boot.logging.logback.LogbackLoggingSystem.initialize(LogbackLoggingSystem.java:114)
+	at org.springframework.boot.context.logging.LoggingApplicationListener.initializeSystem(LoggingApplicationListener.java:264)
+	at org.springframework.boot.context.logging.LoggingApplicationListener.initialize(LoggingApplicationListener.java:237)
+	at org.springframework.boot.context.logging.LoggingApplicationListener.onApplicationEnvironmentPreparedEvent(LoggingApplicationListener.java:200)
+	at org.springframework.boot.context.logging.LoggingApplicationListener.onApplicationEvent(LoggingApplicationListener.java:173)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.doInvokeListener(SimpleApplicationEventMulticaster.java:172)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.invokeListener(SimpleApplicationEventMulticaster.java:165)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:139)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:127)
+	at org.springframework.boot.context.event.EventPublishingRunListener.environmentPrepared(EventPublishingRunListener.java:74)
+	at org.springframework.boot.SpringApplicationRunListeners.environmentPrepared(SpringApplicationRunListeners.java:54)
+	at org.springframework.boot.SpringApplication.prepareEnvironment(SpringApplication.java:351)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:317)
+	at org.springframework.boot.builder.SpringApplicationBuilder.run(SpringApplicationBuilder.java:137)
+	at org.springframework.cloud.bootstrap.BootstrapApplicationListener.bootstrapServiceContext(BootstrapApplicationListener.java:208)
+	at org.springframework.cloud.bootstrap.BootstrapApplicationListener.onApplicationEvent(BootstrapApplicationListener.java:104)
+	at org.springframework.cloud.bootstrap.BootstrapApplicationListener.onApplicationEvent(BootstrapApplicationListener.java:70)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.doInvokeListener(SimpleApplicationEventMulticaster.java:172)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.invokeListener(SimpleApplicationEventMulticaster.java:165)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:139)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:127)
+	at org.springframework.boot.context.event.EventPublishingRunListener.environmentPrepared(EventPublishingRunListener.java:74)
+	at org.springframework.boot.SpringApplicationRunListeners.environmentPrepared(SpringApplicationRunListeners.java:54)
+	at org.springframework.boot.SpringApplication.prepareEnvironment(SpringApplication.java:351)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:317)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1246)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1234)
+	at com.coderpwh.JwtRefreshApplication.main(JwtRefreshApplication.java:17)
+2024-03-21 11:28:21.843 [,] [main] ERROR o.s.boot.SpringApplication - Application run failed
+java.lang.IllegalStateException: Logback configuration error detected: 
+ERROR in ch.qos.logback.core.joran.action.NestedComplexPropertyIA - Could not create component [encoder] of type [net.logstash.logback.encoder.LogstashEncoder] java.lang.ClassNotFoundException: net.logstash.logback.encoder.LogstashEncoder
+ERROR in ch.qos.logback.core.joran.spi.Interpreter@52:86 - no applicable action for [fieldNames], current ElementPath  is [[configuration][appender][encoder][fieldNames]]
+ERROR in ch.qos.logback.core.joran.spi.Interpreter@53:29 - no applicable action for [includeContext], current ElementPath  is [[configuration][appender][encoder][includeContext]]
+ERROR in ch.qos.logback.core.joran.spi.Interpreter@54:32 - no applicable action for [includeCallerData], current ElementPath  is [[configuration][appender][encoder][includeCallerData]]
+ERROR in ch.qos.logback.core.joran.spi.Interpreter@55:27 - no applicable action for [customFields], current ElementPath  is [[configuration][appender][encoder][customFields]]
+ERROR in ch.qos.logback.core.joran.spi.Interpreter@56:97 - no applicable action for [provider], current ElementPath  is [[configuration][appender][encoder][provider]]
+ERROR in ch.qos.logback.core.joran.spi.Interpreter@57:28 - no applicable action for [fieldName], current ElementPath  is [[configuration][appender][encoder][provider][fieldName]]
+ERROR in ch.qos.logback.core.joran.spi.Interpreter@59:106 - no applicable action for [provider], current ElementPath  is [[configuration][appender][encoder][provider]]
+ERROR in ch.qos.logback.core.joran.spi.Interpreter@60:28 - no applicable action for [fieldName], current ElementPath  is [[configuration][appender][encoder][provider][fieldName]]
+ERROR in ch.qos.logback.core.joran.spi.Interpreter@61:37 - no applicable action for [useSimpleClassName], current ElementPath  is [[configuration][appender][encoder][provider][useSimpleClassName]]
+ERROR in ch.qos.logback.core.joran.spi.Interpreter@63:115 - no applicable action for [provider], current ElementPath  is [[configuration][appender][encoder][provider]]
+ERROR in ch.qos.logback.core.joran.spi.Interpreter@64:28 - no applicable action for [fieldName], current ElementPath  is [[configuration][appender][encoder][provider][fieldName]]
+ERROR in ch.qos.logback.core.joran.spi.Interpreter@65:37 - no applicable action for [useSimpleClassName], current ElementPath  is [[configuration][appender][encoder][provider][useSimpleClassName]]
+ERROR in ch.qos.logback.core.rolling.RollingFileAppender[RENT_FILE] - No encoder set for the appender named "RENT_FILE".
+	at org.springframework.boot.logging.logback.LogbackLoggingSystem.loadConfiguration(LogbackLoggingSystem.java:166)
+	at org.springframework.boot.logging.AbstractLoggingSystem.initializeWithConventions(AbstractLoggingSystem.java:82)
+	at org.springframework.boot.logging.AbstractLoggingSystem.initialize(AbstractLoggingSystem.java:60)
+	at org.springframework.boot.logging.logback.LogbackLoggingSystem.initialize(LogbackLoggingSystem.java:114)
+	at org.springframework.boot.context.logging.LoggingApplicationListener.initializeSystem(LoggingApplicationListener.java:264)
+	at org.springframework.boot.context.logging.LoggingApplicationListener.initialize(LoggingApplicationListener.java:237)
+	at org.springframework.boot.context.logging.LoggingApplicationListener.onApplicationEnvironmentPreparedEvent(LoggingApplicationListener.java:200)
+	at org.springframework.boot.context.logging.LoggingApplicationListener.onApplicationEvent(LoggingApplicationListener.java:173)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.doInvokeListener(SimpleApplicationEventMulticaster.java:172)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.invokeListener(SimpleApplicationEventMulticaster.java:165)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:139)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:127)
+	at org.springframework.boot.context.event.EventPublishingRunListener.environmentPrepared(EventPublishingRunListener.java:74)
+	at org.springframework.boot.SpringApplicationRunListeners.environmentPrepared(SpringApplicationRunListeners.java:54)
+	at org.springframework.boot.SpringApplication.prepareEnvironment(SpringApplication.java:351)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:317)
+	at org.springframework.boot.builder.SpringApplicationBuilder.run(SpringApplicationBuilder.java:137)
+	at org.springframework.cloud.bootstrap.BootstrapApplicationListener.bootstrapServiceContext(BootstrapApplicationListener.java:208)
+	at org.springframework.cloud.bootstrap.BootstrapApplicationListener.onApplicationEvent(BootstrapApplicationListener.java:104)
+	at org.springframework.cloud.bootstrap.BootstrapApplicationListener.onApplicationEvent(BootstrapApplicationListener.java:70)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.doInvokeListener(SimpleApplicationEventMulticaster.java:172)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.invokeListener(SimpleApplicationEventMulticaster.java:165)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:139)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:127)
+	at org.springframework.boot.context.event.EventPublishingRunListener.environmentPrepared(EventPublishingRunListener.java:74)
+	at org.springframework.boot.SpringApplicationRunListeners.environmentPrepared(SpringApplicationRunListeners.java:54)
+	at org.springframework.boot.SpringApplication.prepareEnvironment(SpringApplication.java:351)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:317)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1246)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1234)
+	at com.coderpwh.JwtRefreshApplication.main(JwtRefreshApplication.java:17)
+2024-03-21 11:28:21.849 [,] [main] ERROR o.s.boot.SpringApplication - Application run failed
+java.lang.IllegalStateException: Logback configuration error detected: 
+ERROR in ch.qos.logback.core.joran.action.NestedComplexPropertyIA - Could not create component [encoder] of type [net.logstash.logback.encoder.LogstashEncoder] java.lang.ClassNotFoundException: net.logstash.logback.encoder.LogstashEncoder
+ERROR in ch.qos.logback.core.joran.spi.Interpreter@52:86 - no applicable action for [fieldNames], current ElementPath  is [[configuration][appender][encoder][fieldNames]]
+ERROR in ch.qos.logback.core.joran.spi.Interpreter@53:29 - no applicable action for [includeContext], current ElementPath  is [[configuration][appender][encoder][includeContext]]
+ERROR in ch.qos.logback.core.joran.spi.Interpreter@54:32 - no applicable action for [includeCallerData], current ElementPath  is [[configuration][appender][encoder][includeCallerData]]
+ERROR in ch.qos.logback.core.joran.spi.Interpreter@55:27 - no applicable action for [customFields], current ElementPath  is [[configuration][appender][encoder][customFields]]
+ERROR in ch.qos.logback.core.joran.spi.Interpreter@56:97 - no applicable action for [provider], current ElementPath  is [[configuration][appender][encoder][provider]]
+ERROR in ch.qos.logback.core.joran.spi.Interpreter@57:28 - no applicable action for [fieldName], current ElementPath  is [[configuration][appender][encoder][provider][fieldName]]
+ERROR in ch.qos.logback.core.joran.spi.Interpreter@59:106 - no applicable action for [provider], current ElementPath  is [[configuration][appender][encoder][provider]]
+ERROR in ch.qos.logback.core.joran.spi.Interpreter@60:28 - no applicable action for [fieldName], current ElementPath  is [[configuration][appender][encoder][provider][fieldName]]
+ERROR in ch.qos.logback.core.joran.spi.Interpreter@61:37 - no applicable action for [useSimpleClassName], current ElementPath  is [[configuration][appender][encoder][provider][useSimpleClassName]]
+ERROR in ch.qos.logback.core.joran.spi.Interpreter@63:115 - no applicable action for [provider], current ElementPath  is [[configuration][appender][encoder][provider]]
+ERROR in ch.qos.logback.core.joran.spi.Interpreter@64:28 - no applicable action for [fieldName], current ElementPath  is [[configuration][appender][encoder][provider][fieldName]]
+ERROR in ch.qos.logback.core.joran.spi.Interpreter@65:37 - no applicable action for [useSimpleClassName], current ElementPath  is [[configuration][appender][encoder][provider][useSimpleClassName]]
+ERROR in ch.qos.logback.core.rolling.RollingFileAppender[RENT_FILE] - No encoder set for the appender named "RENT_FILE".
+	at org.springframework.boot.logging.logback.LogbackLoggingSystem.loadConfiguration(LogbackLoggingSystem.java:166)
+	at org.springframework.boot.logging.AbstractLoggingSystem.initializeWithConventions(AbstractLoggingSystem.java:82)
+	at org.springframework.boot.logging.AbstractLoggingSystem.initialize(AbstractLoggingSystem.java:60)
+	at org.springframework.boot.logging.logback.LogbackLoggingSystem.initialize(LogbackLoggingSystem.java:114)
+	at org.springframework.boot.context.logging.LoggingApplicationListener.initializeSystem(LoggingApplicationListener.java:264)
+	at org.springframework.boot.context.logging.LoggingApplicationListener.initialize(LoggingApplicationListener.java:237)
+	at org.springframework.boot.context.logging.LoggingApplicationListener.onApplicationEnvironmentPreparedEvent(LoggingApplicationListener.java:200)
+	at org.springframework.boot.context.logging.LoggingApplicationListener.onApplicationEvent(LoggingApplicationListener.java:173)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.doInvokeListener(SimpleApplicationEventMulticaster.java:172)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.invokeListener(SimpleApplicationEventMulticaster.java:165)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:139)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:127)
+	at org.springframework.boot.context.event.EventPublishingRunListener.environmentPrepared(EventPublishingRunListener.java:74)
+	at org.springframework.boot.SpringApplicationRunListeners.environmentPrepared(SpringApplicationRunListeners.java:54)
+	at org.springframework.boot.SpringApplication.prepareEnvironment(SpringApplication.java:351)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:317)
+	at org.springframework.boot.builder.SpringApplicationBuilder.run(SpringApplicationBuilder.java:137)
+	at org.springframework.cloud.bootstrap.BootstrapApplicationListener.bootstrapServiceContext(BootstrapApplicationListener.java:208)
+	at org.springframework.cloud.bootstrap.BootstrapApplicationListener.onApplicationEvent(BootstrapApplicationListener.java:104)
+	at org.springframework.cloud.bootstrap.BootstrapApplicationListener.onApplicationEvent(BootstrapApplicationListener.java:70)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.doInvokeListener(SimpleApplicationEventMulticaster.java:172)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.invokeListener(SimpleApplicationEventMulticaster.java:165)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:139)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:127)
+	at org.springframework.boot.context.event.EventPublishingRunListener.environmentPrepared(EventPublishingRunListener.java:74)
+	at org.springframework.boot.SpringApplicationRunListeners.environmentPrepared(SpringApplicationRunListeners.java:54)
+	at org.springframework.boot.SpringApplication.prepareEnvironment(SpringApplication.java:351)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:317)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1246)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1234)
+	at com.coderpwh.JwtRefreshApplication.main(JwtRefreshApplication.java:17)
