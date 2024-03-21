@@ -66,6 +66,7 @@
             </provider>
         </encoder>
     </appender>
+
     <logger name="io.seata.core.rpc" level="warn" />
     <logger name="com.ulisesbocchio.jasyptspringboot" level="warn" />
     <logger name="org.springframework.context.support" level="warn" />
