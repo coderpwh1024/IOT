@@ -2,7 +2,7 @@
 <!-- logback 配置 -->
 <configuration>
 
-    <property name="path" value="./qnvip-erp-log"/>
+    <property name="path" value="./iot-log"/>
     <property name="maxHistory" value="3"/>
     <property name="maxFileSize" value="100MB"/>
     <property name="LOG_PATTERN" value="%d{yyyy-MM-dd HH:mm:ss.SSS} [%X{traceId},%X{spanId}] [%thread] %-5level %logger{35} - %msg%n"/>
