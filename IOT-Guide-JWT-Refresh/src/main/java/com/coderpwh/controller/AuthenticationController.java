@@ -37,6 +37,13 @@ public class AuthenticationController {
     @Resource
     private JwtUtil jwtUtil;
 
+
+    /***
+     * 鉴权认证
+     * @param authenticationRequest
+     * @return
+     * @throws Exception
+     */
     @RequestMapping(value = "/authenticate", method = RequestMethod.POST)
     public ResponseEntity<?> createAuthenticationToken(@RequestBody AuthenticationRequest authenticationRequest)
             throws Exception {
@@ -54,11 +61,25 @@ public class AuthenticationController {
         return ResponseEntity.ok(new AuthenticationResponse(token));
     }
 
+
+    /***
+     *  注册用户
+     * @param user
+     * @return
+     * @throws Exception
+     */
     @RequestMapping(value = "/register", method = RequestMethod.POST)
     public ResponseEntity<?> saveUser(@RequestBody UserDTO user) throws Exception {
         return ResponseEntity.ok(userDetailsService.save(user));
     }
 
+
+    /***
+     * 刷新token
+     * @param request
+     * @return
+     * @throws Exception
+     */
     @RequestMapping(value = "/refreshtoken", method = RequestMethod.GET)
     public ResponseEntity<?> refreshtoken(HttpServletRequest request) throws Exception {
         // From the HttpRequest get the claims
