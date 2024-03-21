@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- logback 配置 -->
+<configuration>
+
+    <property name="path" value="./qnvip-erp-log"/>
+    <property name="maxHistory" value="3"/>
+    <property name="maxFileSize" value="100MB"/>
+    <property name="LOG_PATTERN" value="%d{yyyy-MM-dd HH:mm:ss.SSS} [%X{traceId},%X{spanId}] [%thread] %-5level %logger{35} - %msg%n"/>
+    <springProperty scope="context" name="active" source="spring.profiles.active" defaultValue=""/>
+    <springProperty scope="context" name="spring.application.name" source="spring.application.name" defaultValue=""/>
+
+    <!-- 输出到控制台 -->
+    <appender name="STDOUT" class="ch.qos.logback.core.ConsoleAppender">
+        <encoder class="ch.qos.logback.classic.encoder.PatternLayoutEncoder">
+            <pattern>${LOG_PATTERN}</pattern>
+            <charset>utf-8</charset>
+        </encoder>
+    </appender>
+    <appender name="ERROR_FILE" class="ch.qos.logback.core.rolling.RollingFileAppender">
+        <File>${path}/error.log</File>
+        <filter class="ch.qos.logback.classic.filter.ThresholdFilter">
+            <level>ERROR</level>
+        </filter>
+        <encoder class="ch.qos.logback.classic.encoder.PatternLayoutEncoder">
+            <pattern>${LOG_PATTERN}</pattern>
+            <charset>utf-8</charset>
+        </encoder>
+        <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
+            <fileNamePattern>${path}/%d{yyyy-MM-dd}/error-%i.log</fileNamePattern>
+            <maxHistory>${maxHistory}</maxHistory>
+            <timeBasedFileNamingAndTriggeringPolicy class="ch.qos.logback.core.rolling.SizeAndTimeBasedFNATP">
+                <maxFileSize>${maxFileSize}</maxFileSize>
+            </timeBasedFileNamingAndTriggeringPolicy>
+        </rollingPolicy>
+    </appender>
+    <!-- 输出到文件，filebeat采集 -->
+    <appender name="RENT_FILE" class="ch.qos.logback.core.rolling.RollingFileAppender">
+        <File>${path}/json.log</File>
+        <rollingPolicy class="ch.qos.logback.core.rolling.SizeAndTimeBasedRollingPolicy">
+            <!-- %i为文件按照maxFileSize大小规定轮转后的序号 -->
+            <!-- 后缀以".zip"或".gz"结尾，则开启日志文件压缩 -->
+            <fileNamePattern>${path}/%d{yyyy-MM-dd}/json-%i.log</fileNamePattern>
+            <cleanHistoryOnStart>true</cleanHistoryOnStart>
+            <!-- 单个日志文件最大大小，当文件达到该大小则触发截断（以及压缩）-->
+            <maxFileSize>${maxFileSize}</maxFileSize>
+            <!-- 日志文件保留最大时间滚动周期，比如当filaNamePattern中%d以为dd结尾时-->
+            <maxHistory>${maxHistory}</maxHistory>
+            <!-- 日志文件保留的总的最大大小-->
+            <totalSizeCap>10GB</totalSizeCap>
+        </rollingPolicy>
+        <encoder class="net.logstash.logback.encoder.LogstashEncoder">
+            <fieldNames class="net.logstash.logback.fieldnames.ShortenedFieldNames"/>
+            <includeContext>false</includeContext>
+            <includeCallerData>true</includeCallerData>
+            <customFields>{"module":"${spring.application.name}", "group":"erp"}</customFields>
+            <provider class="net.logstash.logback.composite.loggingevent.StackHashJsonProvider">
+                <fieldName>stackHash</fieldName>
+            </provider>
+            <provider class="net.logstash.logback.composite.loggingevent.ThrowableClassNameJsonProvider">
+                <fieldName>throwableClass</fieldName>
+                <useSimpleClassName>false</useSimpleClassName>
+            </provider>
+            <provider class="net.logstash.logback.composite.loggingevent.ThrowableRootCauseClassNameJsonProvider">
+                <fieldName>throwableRootCauseClass</fieldName>
+                <useSimpleClassName>false</useSimpleClassName>
+            </provider>
+        </encoder>
+    </appender>
+
+    <logger name="io.seata.core.rpc" level="warn" />
+    <logger name="com.ulisesbocchio.jasyptspringboot" level="warn" />
+    <logger name="org.springframework.context.support" level="warn" />
+    <logger name="org.springframework.test.annotation.ProfileValueUtils" level="warn" />
+    <logger name="com.alibaba" level="warn" />
+    <logger name="org.apache.dubbo" level="warn" />
+
+    <logger name="com.alibaba.cloud.dubbo.registry.GenearalServiceSubscribeHandler" level="error" />
+    <logger name="org.apache.dubbo.registry.integration.InterfaceCompatibleRegistryProtocol" level="error" />
+    <logger name="org.apache.dubbo.registry.client.ServiceDiscoveryRegistry" level="error" />
+    <logger name="com.alibaba.cloud.nacos.client.NacosPropertySourceBuilder" level="error" />
+    <logger name="com.alibaba.cloud.dubbo.metadata.repository.DubboServiceMetadataRepository" level="error" />
+    <logger name="com.alibaba.cloud.dubbo.registry.DubboCloudRegistry" level="error" />
+
+    <!-- 指定日志输出的级别 -->
+    <root level="INFO">
+        <appender-ref ref="STDOUT"/>
+        <appender-ref ref="ERROR_FILE"/>
+        <appender-ref ref="RENT_FILE"/>
+    </root>
+</configuration>
