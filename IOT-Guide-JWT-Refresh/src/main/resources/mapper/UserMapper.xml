@@ -14,7 +14,7 @@
     <select id="findByUsername" resultType="com.coderpwh.entity.UserDomain">
         select
         <include refid="Base_Column_List"/>
-        from t_user where usernmae=#{username}
+        from t_user where `username`=#{username}
     </select>
 
 </mapper>
