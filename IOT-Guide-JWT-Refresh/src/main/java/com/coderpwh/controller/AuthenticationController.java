@@ -90,6 +90,12 @@ public class AuthenticationController {
         return ResponseEntity.ok(new AuthenticationResponse(token));
     }
 
+
+    /***
+     * map转换
+     * @param claims
+     * @return
+     */
     public Map<String, Object> getMapFromIoJsonwebtokenClaims(DefaultClaims claims) {
         Map<String, Object> expectedMap = new HashMap<String, Object>();
         for (Map.Entry<String, Object> entry : claims.entrySet()) {
