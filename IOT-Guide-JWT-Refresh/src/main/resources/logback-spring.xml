@@ -52,7 +52,7 @@
             <fieldNames class="net.logstash.logback.fieldnames.ShortenedFieldNames"/>
             <includeContext>false</includeContext>
             <includeCallerData>true</includeCallerData>
-            <customFields>{"module":"${spring.application.name}", "group":"erp"}</customFields>
+            <customFields>{"module":"${spring.application.name}", "group":"iot"}</customFields>
             <provider class="net.logstash.logback.composite.loggingevent.StackHashJsonProvider">
                 <fieldName>stackHash</fieldName>
             </provider>
